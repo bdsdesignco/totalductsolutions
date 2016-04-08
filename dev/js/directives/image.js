@@ -4,6 +4,6 @@ app.directive('image', function() {
     scope: {
       info: '='
     },
-    templateUrl: 'views/templates/image.html'
+    templateUrl: 'views/body/image.html'
   }
 });

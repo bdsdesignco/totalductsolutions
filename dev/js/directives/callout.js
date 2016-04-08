@@ -4,6 +4,6 @@ app.directive('callout', function() {
     scope: {
       info: '='
     },
-    templateUrl: 'views/templates/callout.html'
+    templateUrl: 'views/body/callout.html'
   }
 });

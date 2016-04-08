@@ -1,0 +1,16 @@
+#navbar {
+  &.navbar-fixed {
+    height: 80px;
+  }
+
+  nav {
+    background-color: #BFBEBE;
+    height: 80px;
+  }
+
+  img {
+  	height: 78px !important;
+  	padding-top: 2px;
+  	padding-bottom: 2px;
+  }
+}

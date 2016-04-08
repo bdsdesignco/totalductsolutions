@@ -1,4 +1,4 @@
-var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'duScroll']);
+var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'angular-parallax']);
 
 app.config([
   '$stateProvider',
