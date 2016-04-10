@@ -1,8 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata;);
 #navbar.navbar-fixed {
-  height: 80px; }
+  height: 80px !important; }
 #navbar nav {
   background-color: #BFBEBE;
-  height: 80px; }
+  height: 80px !important; }
 #navbar img {
   height: 78px !important;
   padding-top: 2px;
@@ -18,5 +19,12 @@
 
 #info {
   background-color: #495EC5; }
+  #info .slider .slides {
+    background-color: transparent; }
+    #info .slider .slides li, #info .slider .slides .caption {
+      opacity: 1; }
+
+h4 {
+  font-family: Inconsolata, sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

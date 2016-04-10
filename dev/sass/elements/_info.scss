@@ -1,3 +1,11 @@
 #info {
   background-color: #495EC5;
+
+  .slider .slides {
+    background-color: rgba(0,0,0,0);
+
+    li, & .caption {
+      opacity: 1;
+    }
+  }
 }

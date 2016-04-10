@@ -1,11 +1,11 @@
 #navbar {
   &.navbar-fixed {
-    height: 80px;
+    height: 80px !important;
   }
 
   nav {
     background-color: #BFBEBE;
-    height: 80px;
+    height: 80px !important;
   }
 
   img {

@@ -1,7 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata;);
+
 @import "elements/navbar";
 @import "elements/callout";
 @import "elements/info";
 
-// .parallax {
-//   z-index: 0;
-// }
+// @include font-face("NexaBold", font-files("nexa_bold-webfont.woff", "nexa_bold-webfont.ttf", "nexa_bold-webfont.svg", "nexa_bold-webfont.eot"));
+
+//
+
+// $font-family-sans-serif: 'Inconsolata';
+
+$font-stack: Inconsolata, sans-serif;
+
+h4 {
+  font-family: $font-stack;
+}
