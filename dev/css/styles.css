@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata;);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 #navbar.navbar-fixed {
   height: 80px !important; }
 #navbar nav {
@@ -22,9 +22,30 @@
   #info .slider .slides {
     background-color: transparent; }
     #info .slider .slides li, #info .slider .slides .caption {
+      left: 5%;
+      width: 90%;
       opacity: 1; }
+      #info .slider .slides li h4, #info .slider .slides .caption h4 {
+        line-height: 160%; }
 
-h4 {
+#carousel {
+  background-image: url("../images/sections/image2.jpg");
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative; }
+
+#bottom {
+  background-color: #BFBEBE; }
+  #bottom .row {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #bottom img {
+    height: 80px; }
+
+body {
   font-family: Inconsolata, sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,13 @@
     background-color: rgba(0,0,0,0);
 
     li, & .caption {
+      left: 5%;
+      width: 90%;
       opacity: 1;
+
+      h4 {
+        line-height: 160%;
+      }
     }
   }
 }
