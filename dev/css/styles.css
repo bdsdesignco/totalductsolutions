@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+body {
+  font-family: Inconsolata, sans-serif; }
+
+.clearfix {
+  clear: both; }
+
 #navbar.navbar-fixed {
   height: 80px !important; }
 #navbar nav {
@@ -8,6 +14,18 @@
   height: 78px !important;
   padding-top: 2px;
   padding-bottom: 2px; }
+#navbar #nav-button {
+  display: -webkit-flex;
+  -webkit-flex-flow: wrap;
+  display: flex;
+  flex-direction: column; }
+  #navbar #nav-button #nav-badge span {
+    margin-right: 100px;
+    color: #D0021B; }
+  #navbar #nav-button #nav-btn button {
+    text-transform: none;
+    color: white;
+    background-color: #495EC5; }
 
 #callout {
   background-image: url("../images/sections/image1.jpg");
@@ -44,8 +62,5 @@
     padding-bottom: 20px; }
   #bottom img {
     height: 80px; }
-
-body {
-  font-family: Inconsolata, sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

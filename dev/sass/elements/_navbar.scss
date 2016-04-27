@@ -13,4 +13,22 @@
   	padding-top: 2px;
   	padding-bottom: 2px;
   }
+
+  #nav-button {
+    display: -webkit-flex;
+    -webkit-flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+
+    #nav-badge span {
+      margin-right: 100px;
+      color: #D0021B;
+    }
+
+    #nav-btn button {
+      text-transform: none;
+      color: white;
+      background-color: #495EC5;
+    }
+  }
 }
