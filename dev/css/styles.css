@@ -5,6 +5,9 @@ body {
 .clearfix {
   clear: both; }
 
+.material-icons {
+  line-height: inherit; }
+
 /*
   NAVBAR STYLING
   ==============
@@ -36,8 +39,7 @@ body {
   display: -webkit-flex;
   -webkit-flex-flow: wrap;
   display: flex;
-  flex-direction: column;
-  vertical-align: middle; }
+  flex-direction: column; }
   #navbar #nav-button #nav-badge span {
     margin-right: 100px;
     color: #D0021B; }
@@ -53,6 +55,12 @@ body {
   background-repeat: no-repeat;
   height: 450px;
   position: relative; }
+  #callout .container {
+    padding-top: 112px; }
+    #callout .container .card-panel {
+      background-color: rgba(216, 216, 216, 0.85); }
+      #callout .container .card-panel h5 {
+        line-height: 150%; }
 
 #info {
   background-color: #495EC5; }
@@ -63,7 +71,12 @@ body {
       width: 90%;
       opacity: 1; }
       #info .slider .slides li h4, #info .slider .slides .caption h4 {
-        line-height: 160%; }
+        line-height: 160%;
+        font-size: 2rem; }
+  #info .info-btn {
+    background-color: #D0021B;
+    margin-left: 0px !important;
+    margin-top: 12px !important; }
 
 #carousel {
   background-image: url("../images/sections/image2.jpg");

@@ -18,6 +18,10 @@ body {
   clear: both;
 }
 
+.material-icons {
+  line-height: inherit;
+}
+
 @import "elements/navbar";
 @import "elements/callout";
 @import "elements/info";
