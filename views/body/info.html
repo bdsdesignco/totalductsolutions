@@ -1,26 +1,16 @@
-<div id="info" class="section">
+<div id="info" ng-controller="InfoController" class="section">
   <div class="container">
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <div class="caption left-align">
-            <h4>We are able to fulfill any of you custom HVAC needs. Download the fitting list PDF below for a complete list of our common duct fittings.</h4>
-            <md-button class="md-fab info-btn" aria-label="Eat cake">
-              <i class="material-icons">more_horiz</i>
-            </md-button>
-          </div>
-        </li>
-        <!-- <li>
-          <div class="caption left-align">
-            <h4>We are able to fulfill any of you custom HVAC needs. Download the fitting list PDF below for a complete list of our common duct fittings.</h4>
-          </div>
-        </li>
-        <li>
-          <div class="caption left-align">
-            <h4>We are able to fulfill any of you custom HVAC needs. Download the fitting list PDF below for a complete list of our common duct fittings.</h4>
-          </div>
-        </li> -->
-      </ul>
-    </div>
+    <carousel active="active" interval="myInterval">
+      <slide ng-repeat="slide in slides" index="slide.id">
+        <!-- <img ng-src="{{slide.image}}" style="margin:auto;"> -->
+        <div class="carousel-caption">
+          <h4>Slide {{slide.desc}}</h4>
+          <!-- <p>{{slide.text}}</p> -->
+          <md-button class="md-fab info-btn" aria-label="Eat cake">
+            <i class="material-icons">{{slide.icon}}</i>
+          </md-button>
+        </div>
+      </slide>
+    </carousel>
   </div>
 </div>

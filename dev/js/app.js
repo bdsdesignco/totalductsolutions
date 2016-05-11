@@ -1,4 +1,4 @@
-var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'angular-parallax']);
+var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'angular-parallax', 'ngAnimate', 'ui.bootstrap']);
 
 app.config([
   '$stateProvider',
