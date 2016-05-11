@@ -64,19 +64,20 @@ body {
 
 #info {
   background-color: #495EC5; }
-  #info .slider .slides {
-    background-color: transparent; }
-    #info .slider .slides li, #info .slider .slides .caption {
-      left: 5%;
-      width: 90%;
-      opacity: 1; }
-      #info .slider .slides li h4, #info .slider .slides .caption h4 {
-        line-height: 160%;
-        font-size: 2rem; }
   #info .info-btn {
     background-color: #D0021B;
-    margin-left: 0px !important;
+    margin-left: 2px !important;
     margin-top: 12px !important; }
+  #info ul {
+    height: 400px;
+    left: 5%;
+    width: 90%; }
+    #info ul h4 {
+      color: white;
+      line-height: 200%;
+      font-size: 1.8rem; }
+  #info #info-indicators {
+    text-align: center; }
 
 #third {
   background-image: url("../images/sections/image2.jpg");

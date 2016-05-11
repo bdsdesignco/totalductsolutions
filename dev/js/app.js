@@ -1,4 +1,6 @@
-var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'angular-parallax', 'ngAnimate', 'ui.bootstrap']);
+// var carousel = require('angular-carousel');
+
+var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'angular-parallax', 'angular-carousel']);
 
 app.config([
   '$stateProvider',

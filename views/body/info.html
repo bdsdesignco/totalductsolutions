@@ -1,16 +1,14 @@
 <div id="info" ng-controller="InfoController" class="section">
   <div class="container">
-    <carousel active="active" interval="myInterval">
-      <slide ng-repeat="slide in slides" index="slide.id">
-        <!-- <img ng-src="{{slide.image}}" style="margin:auto;"> -->
-        <div class="carousel-caption">
-          <h4>{{slide.desc}}</h4>
-          <!-- <p>{{slide.text}}</p> -->
-          <md-button class="md-fab info-btn" aria-label="Eat cake">
-            <i class="material-icons">{{slide.icon}}</i>
-          </md-button>
-        </div>
-      </slide>
-    </carousel>
+    <ul rn-carousel rn-carousel-controls rn-carousel-auto-slide="4">
+      <li ng-repeat="slide in slides">
+        <h4>{{slide.desc}}</h4>
+        <md-button class="md-fab info-btn">
+          <md-tooltip md-direction="right">{{slide.tooltip}}</md-tooltip>
+          <i class="material-icons">{{slide.icon}}</i>
+        </md-button>
+      </li>
+      <div id="info-indicators" rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
+    </ul>
   </div>
 </div>
