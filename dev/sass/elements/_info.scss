@@ -37,4 +37,18 @@
   #info-indicators {
     text-align: center;
   }
+
+  .rn-carousel-controls {
+    position: absolute;;
+
+    .rn-carousel-control-prev {
+      position: relative;
+      bottom: 200px;
+    }
+
+    .rn-carousel-control-next {
+      position: relative;
+      bottom: 200px;
+    }
+  }
 }

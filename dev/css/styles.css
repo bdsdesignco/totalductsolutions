@@ -78,6 +78,14 @@ body {
       font-size: 1.8rem; }
   #info #info-indicators {
     text-align: center; }
+  #info .rn-carousel-controls {
+    position: absolute; }
+    #info .rn-carousel-controls .rn-carousel-control-prev {
+      position: relative;
+      bottom: 200px; }
+    #info .rn-carousel-controls .rn-carousel-control-next {
+      position: relative;
+      bottom: 200px; }
 
 #third {
   background-image: url("../images/sections/image2.jpg");
