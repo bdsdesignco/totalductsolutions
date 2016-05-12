@@ -1,0 +1,62 @@
+/*
+  NAVBAR STYLING
+  ==============
+  The following contains the styling for the navbar. This is all contained
+  within a partial sass file that is compiled into CSS then minified for
+  production.
+*/
+#navbar {
+  // Navbar styling for bigger screens
+  @media screen and (min-width: 768px) {
+    &.navbar-fixed {
+      height: 80px !important;
+    }
+
+    nav {
+      background-color: #BFBEBE;
+      height: 80px !important;
+    }
+
+    img {
+    	height: 78px !important;
+    	padding-top: 2px;
+    	padding-bottom: 2px;
+    }
+  }
+
+  // Navbar styling for smaller screens
+  @media screen and (max-width: 767px) {
+    &.navbar-fixed {
+      height: 64px !important;
+    }
+
+    nav {
+      background-color: #BFBEBE;
+      height: 64px !important;
+    }
+
+    img {
+    	height: 62px !important;
+    	padding-top: 2px;
+    	padding-bottom: 2px;
+    }
+  }
+
+  #nav-button {
+    display: -webkit-flex;
+    -webkit-flex-flow: wrap;
+    display: flex;
+    flex-direction: column;
+
+    #nav-badge span {
+      margin-right: 100px;
+      color: #D0021B;
+    }
+
+    #nav-btn button {
+      text-transform: none;
+      color: white;
+      background-color: #495EC5;
+    }
+  }
+}

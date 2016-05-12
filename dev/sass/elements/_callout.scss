@@ -1,0 +1,22 @@
+#callout {
+  // height: 500px;
+  // width: 100%;
+  background-image: url('../images/sections/image1.jpg');
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+
+  .container {
+    padding-top: 112px;
+
+    .card-panel {
+      background-color: rgba(216, 216, 216, 0.85);
+
+      h5 {
+        line-height: 150%;
+      }
+    }
+  }
+}
