@@ -1,23 +1,74 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
-
-
-// @include font-face("NexaBold", font-files("nexa_bold-webfont.woff", "nexa_bold-webfont.ttf", "nexa_bold-webfont.svg", "nexa_bold-webfont.eot"));
-
-//
-
-// $font-family-sans-serif: 'Inconsolata';
-
 $font-stack: Inconsolata, sans-serif;
 
 body {
   font-family: $font-stack;
+  background: url("../images/image1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/sections/image1.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/sections/image1.jpg', sizingMethod='scale')";
 }
 
-.clearfix {
-  clear: both;
+.main {
+  width: 80%;
+  height: 40%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  .card-panel {
+    background-color:rgba(255, 255, 255, 0.7);
+
+    .row {
+      margin-bottom: 0px;
+    }
+
+    #left {
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+  }
 }
 
-.material-icons {
-  line-height: inherit;
+/*
+  Responsive formatting
+*/
+@media (max-width: 768px) {
+  h3 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 425px) {
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
 }
