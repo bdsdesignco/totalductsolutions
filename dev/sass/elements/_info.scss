@@ -38,17 +38,19 @@
     text-align: center;
   }
 
-  .rn-carousel-controls {
-    position: absolute;;
+  // .rn-carousel-controls {
+  //   position: absolute;;
 
     .rn-carousel-control-prev {
       position: relative;
-      bottom: 200px;
+      bottom: 230px;
+      margin-left: -20px;
     }
 
     .rn-carousel-control-next {
       position: relative;
-      bottom: 200px;
+      bottom: 230px;
+      margin-left: 100%
     }
-  }
+  // }
 }
