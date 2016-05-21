@@ -4,15 +4,18 @@ app.controller('InfoController',['$scope', function($scope) {
     {
       desc: "We are able to fulfill any of you custom HVAC needs. Download the fitting list PDF below for a complete list of our common duct fittings.",
       icon: "more_horiz",
-      tooltip: "View Here"
+      tooltip: "View Here",
+      order: 1
     }, {
       desc: "We offer a variety of different custom duct solutions. Whether it's a standard or custom order, we will find a solution to fit your job's requirements.",
       icon: "email",
-      tooltip: "Contact Us!"
+      tooltip: "Contact Us!",
+      order: 2
     }, {
-      desc: "Our fully functioning fabrication shop provides a full range of equipment capable of manufacturing any of your needs. Our licensed fabricators' attention to detail ensures your fittings are done correctly.",
+      desc: "Our fabrication shop provides all of the equipment capable of manufacturing any of your needs. Our licensed fabricators' attention to detail ensures your fittings are done correctly.",
       icon: "arrow_forward",
-      tooltip: "View Equipment List"
+      tooltip: "View Equipment List",
+      order: 3
     }
   ];
 }]);
