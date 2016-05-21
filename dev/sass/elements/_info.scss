@@ -45,12 +45,18 @@
       position: relative;
       bottom: 230px;
       margin-left: -20px;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box;
     }
 
     .rn-carousel-control-next {
       position: relative;
       bottom: 230px;
-      margin-left: 100%
+      margin-left: 100%;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box;
     }
   // }
 }

@@ -81,11 +81,17 @@ body {
   #info .rn-carousel-control-prev {
     position: relative;
     bottom: 230px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    padding: 0px;
+    float: left;
+    box-sizing: border-box; }
   #info .rn-carousel-control-next {
     position: relative;
     bottom: 230px;
-    margin-left: 100%; }
+    margin-left: 100%;
+    padding: 0px;
+    float: left;
+    box-sizing: border-box; }
 
 #third {
   background-image: url("../images/sections/image2.jpg");
