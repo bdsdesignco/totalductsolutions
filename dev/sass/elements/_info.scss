@@ -1,39 +1,58 @@
+/*
+
+*/
+
 #info {
   background-color: #495EC5;
 
-  // .slider .slides {
-  //   background-color: rgba(0,0,0,0);
-  //
-  //   li, & .caption {
-  //     left: 5%;
-  //     width: 90%;
-  //     opacity: 1;
-  //
-  //     h4 {
-  //       line-height: 160%;
-  //       font-size: 2rem;
-  //     }
-  //   }
-  // }
-  //
   .info-btn {
     background-color: #D0021B;
     margin-left: 2px !important;
     margin-top: 12px !important;
   }
 
-  ul {
-    height: 400px;
-    left: 5%;
-    width: 90%;
+  .row {
+    margin-bottom: 0px !important;
+  }
 
-    li {
-      vertical-align: middle;
+  /*
+    Font and height settings for the content in the info section
+  */
 
-      h4 {
-        color: white;
-        line-height: 200%;
-        font-size: 1.8rem;
+  // Smaller screen sizes
+  @media screen and (max-width: 500px) {
+    ul {
+      height: 500px;
+      left: 5%;
+      width: 90%;
+
+      li {
+        vertical-align: middle;
+
+        h4 {
+          color: white;
+          line-height: 200%;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Larger screen sizes
+  @media screen and (min-width: 501px) {
+    ul {
+      height: 400px;
+      left: 5%;
+      width: 90%;
+
+      li {
+        vertical-align: middle;
+
+        h4 {
+          color: white;
+          line-height: 200%;
+          font-size: 1.8rem;
+        }
       }
     }
   }
@@ -42,35 +61,31 @@
     text-align: center;
   }
 
-  // .rn-carousel-controls {
-  //   position: absolute;;
+  .rn-carousel-control-prev {
+    position: relative;
+    bottom: 230px;
+    margin-left: -20px;
+    padding: 0px;
+    float: left;
+    box-sizing: border-box;
 
-    .rn-carousel-control-prev {
-      position: relative;
-      bottom: 230px;
-      margin-left: -20px;
-      padding: 0px;
-      float: left;
-      box-sizing: border-box;
-
-      &::before {
-        content: "\E314" !important;
-        color: white;
-      }
+    &::before {
+      content: "❮" !important;
+      color: white;
     }
+  }
 
-    .rn-carousel-control-next {
-      position: relative;
-      bottom: 230px;
-      margin-left: 100%;
-      padding: 0px;
-      float: left;
-      box-sizing: border-box;
+  .rn-carousel-control-next {
+    position: relative;
+    bottom: 230px;
+    margin-left: 100%;
+    padding: 0px;
+    float: left;
+    box-sizing: border-box;
 
-      &::before {
-        content: "\E315" !important;
-        color: white;
-      }
+    &::before {
+      content: "❯" !important;
+      color: white;
     }
-  // }
+  }
 }

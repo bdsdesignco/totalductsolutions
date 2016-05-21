@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 body {
   font-family: Inconsolata, sans-serif; }
@@ -62,22 +63,42 @@ body {
       #callout .container .card-panel h5 {
         line-height: 150%; }
 
+/*
+
+*/
 #info {
-  background-color: #495EC5; }
+  background-color: #495EC5;
+  /*
+    Font and height settings for the content in the info section
+  */ }
   #info .info-btn {
     background-color: #D0021B;
     margin-left: 2px !important;
     margin-top: 12px !important; }
-  #info ul {
-    height: 400px;
-    left: 5%;
-    width: 90%; }
-    #info ul li {
-      vertical-align: middle; }
-      #info ul li h4 {
-        color: white;
-        line-height: 200%;
-        font-size: 1.8rem; }
+  #info .row {
+    margin-bottom: 0px !important; }
+  @media screen and (max-width: 500px) {
+    #info ul {
+      height: 500px;
+      left: 5%;
+      width: 90%; }
+      #info ul li {
+        vertical-align: middle; }
+        #info ul li h4 {
+          color: white;
+          line-height: 200%;
+          font-size: 1.5rem; } }
+  @media screen and (min-width: 501px) {
+    #info ul {
+      height: 400px;
+      left: 5%;
+      width: 90%; }
+      #info ul li {
+        vertical-align: middle; }
+        #info ul li h4 {
+          color: white;
+          line-height: 200%;
+          font-size: 1.8rem; } }
   #info #info-indicators {
     text-align: center; }
   #info .rn-carousel-control-prev {
@@ -88,7 +109,7 @@ body {
     float: left;
     box-sizing: border-box; }
     #info .rn-carousel-control-prev::before {
-      content: "\E314" !important;
+      content: "❮" !important;
       color: white; }
   #info .rn-carousel-control-next {
     position: relative;
@@ -98,7 +119,7 @@ body {
     float: left;
     box-sizing: border-box; }
     #info .rn-carousel-control-next::before {
-      content: "\E315" !important;
+      content: "❯" !important;
       color: white; }
 
 #third {
