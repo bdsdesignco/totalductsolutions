@@ -6,6 +6,7 @@
   production.
 */
 #navbar {
+  z-index: 100;
   // Navbar styling for bigger screens
   @media screen and (min-width: 768px) {
     &.navbar-fixed {

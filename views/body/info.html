@@ -5,7 +5,7 @@
         <ul id="info-slider" rn-carousel rn-carousel-controls >
           <li ng-repeat="slide in slides">
             <h4>{{slide.desc}}</h4>
-            <md-button class="md-fab info-btn" ng-click="slide.modal">
+            <md-button class="md-fab info-btn" ng-click="$eval(slide.modal)">
               <md-tooltip md-direction="right">{{slide.tooltip}}</md-tooltip>
               <i class="material-icons">{{slide.icon}}</i>
             </md-button>
@@ -13,21 +13,6 @@
           <div id="info-indicators" rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
         </ul>
       </div>
-    </div>
-  </div>
-
-
-</div>
-
-<!-- Modal setup -->
-<div ng-repeat="modal in modals">
-  <div id="{{modal.modal}}" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
 </div>
