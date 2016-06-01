@@ -5,10 +5,6 @@
         <ul id="info-slider" rn-carousel rn-carousel-controls >
           <li ng-repeat="slide in slides">
             <h4>{{slide.desc}}</h4>
-            <md-button class="md-fab info-btn" ng-click="$eval(slide.modal)">
-              <md-tooltip md-direction="right">{{slide.tooltip}}</md-tooltip>
-              <i class="material-icons">{{slide.icon}}</i>
-            </md-button>
           </li>
           <div id="info-indicators" rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
         </ul>
