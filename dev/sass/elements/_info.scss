@@ -36,6 +36,34 @@
         }
       }
     }
+
+    .rn-carousel-control-prev {
+      position: relative;
+      bottom: 300px;
+      margin-left: -20px;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box;
+
+      &::before {
+        content: "❮" !important;
+        color: white;
+      }
+    }
+
+    .rn-carousel-control-next {
+      position: relative;
+      bottom: 300px;
+      margin-left: 100%;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box;
+
+      &::before {
+        content: "❯" !important;
+        color: white;
+      }
+    }
   }
 
   // Larger screen sizes
@@ -55,37 +83,37 @@
         }
       }
     }
+
+    .rn-carousel-control-prev {
+      position: relative;
+      bottom: 230px;
+      margin-left: -20px;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box;
+
+      &::before {
+        content: "❮" !important;
+        color: white;
+      }
+    }
+
+    .rn-carousel-control-next {
+      position: relative;
+      bottom: 230px;
+      margin-left: 100%;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box;
+
+      &::before {
+        content: "❯" !important;
+        color: white;
+      }
+    }
   }
 
   #info-indicators {
     text-align: center;
-  }
-
-  .rn-carousel-control-prev {
-    position: relative;
-    bottom: 230px;
-    margin-left: -20px;
-    padding: 0px;
-    float: left;
-    box-sizing: border-box;
-
-    &::before {
-      content: "❮" !important;
-      color: white;
-    }
-  }
-
-  .rn-carousel-control-next {
-    position: relative;
-    bottom: 230px;
-    margin-left: 100%;
-    padding: 0px;
-    float: left;
-    box-sizing: border-box;
-
-    &::before {
-      content: "❯" !important;
-      color: white;
-    }
   }
 }

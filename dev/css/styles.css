@@ -9,6 +9,9 @@ body {
 .material-icons {
   line-height: inherit; }
 
+md-backdrop.md-opaque {
+  opacity: 0.88 !important; }
+
 /*
   NAVBAR STYLING
   ==============
@@ -89,7 +92,27 @@ body {
         #info ul li h4 {
           color: white;
           line-height: 200%;
-          font-size: 1.5rem; } }
+          font-size: 1.5rem; }
+    #info .rn-carousel-control-prev {
+      position: relative;
+      bottom: 300px;
+      margin-left: -20px;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box; }
+      #info .rn-carousel-control-prev::before {
+        content: "❮" !important;
+        color: white; }
+    #info .rn-carousel-control-next {
+      position: relative;
+      bottom: 300px;
+      margin-left: 100%;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box; }
+      #info .rn-carousel-control-next::before {
+        content: "❯" !important;
+        color: white; } }
   @media screen and (min-width: 501px) {
     #info ul {
       height: 400px;
@@ -100,29 +123,29 @@ body {
         #info ul li h4 {
           color: white;
           line-height: 200%;
-          font-size: 1.8rem; } }
+          font-size: 1.8rem; }
+    #info .rn-carousel-control-prev {
+      position: relative;
+      bottom: 230px;
+      margin-left: -20px;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box; }
+      #info .rn-carousel-control-prev::before {
+        content: "❮" !important;
+        color: white; }
+    #info .rn-carousel-control-next {
+      position: relative;
+      bottom: 230px;
+      margin-left: 100%;
+      padding: 0px;
+      float: left;
+      box-sizing: border-box; }
+      #info .rn-carousel-control-next::before {
+        content: "❯" !important;
+        color: white; } }
   #info #info-indicators {
     text-align: center; }
-  #info .rn-carousel-control-prev {
-    position: relative;
-    bottom: 230px;
-    margin-left: -20px;
-    padding: 0px;
-    float: left;
-    box-sizing: border-box; }
-    #info .rn-carousel-control-prev::before {
-      content: "❮" !important;
-      color: white; }
-  #info .rn-carousel-control-next {
-    position: relative;
-    bottom: 230px;
-    margin-left: 100%;
-    padding: 0px;
-    float: left;
-    box-sizing: border-box; }
-    #info .rn-carousel-control-next::before {
-      content: "❯" !important;
-      color: white; }
 
 #third {
   background-image: url("../images/sections/image2.jpg");
@@ -140,5 +163,8 @@ body {
     padding-bottom: 20px; }
   #bottom img {
     height: 80px; }
+
+#modal1 {
+  padding-top: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

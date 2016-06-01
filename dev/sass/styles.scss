@@ -14,8 +14,13 @@ body {
   line-height: inherit;
 }
 
+md-backdrop.md-opaque {
+  opacity: 0.88!important;
+}
+
 @import "elements/navbar";
 @import "elements/callout";
 @import "elements/info";
 @import "elements/third";
 @import "elements/bottom";
+@import "elements/modals";
