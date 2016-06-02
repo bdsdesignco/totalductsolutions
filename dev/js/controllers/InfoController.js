@@ -1,7 +1,7 @@
 app.controller('InfoController',['$scope', '$mdDialog', function($scope, $mdDialog) {
   $scope.slides = [
     {
-      desc: "We are able to fulfill any of you custom HVAC needs. Check out our common fitting list by clicking button below.",
+      desc: "We are able to fulfill any of your custom HVAC needs. Check out our common fitting list by clicking button below.",
       icon: "more_horiz",
       tooltip: "View Here",
       modal: "showModal1($event)"
