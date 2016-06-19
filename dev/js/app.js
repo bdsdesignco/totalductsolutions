@@ -1,6 +1,6 @@
 // var carousel = require('angular-carousel');
 
-var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'ngMessages', 'angular-parallax', 'angular-carousel']);
+var app = angular.module('totalductsolutions', ['ui.router', 'ngMaterial', 'ngMessages', 'angular-carousel']);
 
 app.config([
   '$stateProvider',
