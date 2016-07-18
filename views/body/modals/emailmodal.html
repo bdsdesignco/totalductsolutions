@@ -1,0 +1,57 @@
+<md-dialog flex="60" id="emailModal" aria-label="Email Form Modal" ng-cloak>
+    <md-dialog-content>
+      <div layout="row" layout-margin>
+        <div id="email-firstname" flex="50">
+          <md-input-container class="red-margin md-block">
+            <label>First Name</label>
+            <input />
+          </md-input-container>
+        </div>
+
+        <div id="email-lastname" flex="50">
+          <md-input-container class="red-margin md-block">
+            <label>Last Name</label>
+            <input />
+          </md-input-container>
+        </div>
+      </div>
+
+      <div id="email-company" class="" layout-margin>
+        <md-input-container class="red-margin md-block">
+          <label>Company Name</label>
+          <input />
+        </md-input-container>
+      </div>
+
+
+      <div layout="row" layout-margin>
+        <!-- EMAIL INPUT -->
+        <div id="email-email" flex="50">
+          <md-input-container class="red-margin md-block">
+            <label>Email</label>
+            <input />
+          </md-input-container>
+        </div>
+
+        <!-- PHONE NUMBER -->
+        <div id="email-phonenumber" flex="50">
+          <md-input-container class="red-margin md-block">
+            <label>Phone Number</label>
+            <input name="phone" ng-model="user.phone" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/">
+
+            <div class="hint" ng-hide="showHints">(###) ###-####</div>
+
+            <div ng-messages="userForm.phone.$error" ng-show="showHints">
+            <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+          </div>
+          </md-input-container>
+        </div>
+      </div>
+
+      <div id="email-phonenumber" layout-margin>
+        <md-input-container class="red-margin md-block">
+          <textarea ng-model="user.message" md-maxlength="1000" rows="5" md-select-on-focus=""></textarea>
+        </md-input-container>
+      </div>
+    </md-dialog-content>
+</md-dialog>

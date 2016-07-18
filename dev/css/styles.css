@@ -195,4 +195,28 @@ md-backdrop.md-opaque {
   #bottom img {
     height: 70px; }
 
+#emailModal .md-errors-spacer {
+  min-height: 12px !important; }
+#emailModal .red-margin {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important; }
+#emailModal .hint {
+  /* Position the hint */
+  position: absolute;
+  left: 2px;
+  right: auto;
+  bottom: 7px;
+  /* Copy styles from ng-messages */
+  font-size: 12px;
+  line-height: 14px;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  /* Set our own color */
+  color: grey; }
+  #emailModal .hint.ng-hide, #emailModal .hint.ng-enter, #emailModal .hint.ng-leave.ng-leave-active {
+    bottom: 26px;
+    opacity: 0; }
+  #emailModal .hint.ng-leave, #emailModal .hint.ng-enter.ng-enter-active {
+    bottom: 7px;
+    opacity: 1; }
+
 /*# sourceMappingURL=styles.css.map */
