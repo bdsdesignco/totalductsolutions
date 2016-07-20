@@ -1,0 +1,53 @@
+
+#emailModal {
+  input:not[type]:focus:not([readonly]) {
+    border-bottom: 1px solid #5E0400 !important;
+    box-shadow: 0 1px 0 0 #5E0400 !important;
+  }
+
+  input:not([type]) {
+    border-bottom: 1px solid black;
+  }
+
+  textarea {
+    border-color: black !important;
+  }
+
+  .md-errors-spacer {
+    min-height: 12px !important;
+  }
+
+  .red-margin {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hint {
+    /* Position the hint */
+    position: absolute;
+    left: 2px;
+    right: auto;
+    bottom: 7px;
+    /* Copy styles from ng-messages */
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    /* Set our own color */
+    color: #3b3b3b;
+
+    &.ng-hide, &.ng-enter, &.ng-leave.ng-leave-active {
+      bottom: 26px;
+      opacity: 0;
+    }
+
+    &.ng-leave, &.ng-enter.ng-enter-active {
+      bottom: 7px;
+      opacity: 1;
+    }
+  }
+
+  label {
+    color: black;
+    font-size: 16px;
+  }
+}
