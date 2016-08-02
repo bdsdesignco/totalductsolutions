@@ -1,12 +1,13 @@
 
 #emailModal {
-  input:not[type]:focus:not([readonly]) {
+  input:not([type]):focus:not([readonly]) {
     border-bottom: 1px solid #5E0400 !important;
     box-shadow: 0 1px 0 0 #5E0400 !important;
   }
 
   input:not([type]) {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #495EC5;
+    // box-shadow: 0 1px 0 0 #5E0400 !important;
   }
 
   textarea {

@@ -38,11 +38,11 @@
           <div id="email-phonenumber" flex="50">
             <md-input-container class="red-margin md-block">
               <label>Phone Number</label>
-              <input name="phone" ng-model="user.phone" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/">
+              <input name="phone" ng-model="user.phone" type="tel" pattern="[0-9]*" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/">
 
-              <div class="hint" ng-hide="showHints">(###) ###-####</div>
+              <div class="hint" ng-show="showHints">(###) ###-####</div>
 
-              <div ng-messages="userForm.phone.$error" ng-show="showHints">
+              <div ng-messages="userForm.phone.$error" ng-hide="showHints">
               <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
             </div>
             </md-input-container>
