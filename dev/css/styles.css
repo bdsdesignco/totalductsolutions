@@ -228,5 +228,7 @@ md-backdrop.md-opaque {
 #emailModal label {
   color: black;
   font-size: 16px; }
+#emailModal #email-attachment button {
+  background-color: #BFBEBE; }
 
 /*# sourceMappingURL=styles.css.map */

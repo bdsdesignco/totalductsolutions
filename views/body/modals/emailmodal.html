@@ -1,4 +1,4 @@
-<div id="emailModal" flex-gt-xs="60" flex-xs="100" flex-offset-xs="10" flex-offset-gt-xs="15">
+<div id="emailModal" ng-controller="EmailController" flex-gt-xs="60" flex-xs="100" flex-offset-xs="10" flex-offset-gt-xs="15">
   <md-dialog aria-label="Email Form Modal" ng-cloak>
       <md-dialog-content>
         <div layout="row" layout-margin>
@@ -36,16 +36,22 @@
 
           <!-- PHONE NUMBER -->
           <div id="email-phonenumber" flex="50">
-            <md-input-container class="red-margin md-block">
+            <!-- <md-input-container class="red-margin md-block"> -->
               <label>Phone Number</label>
-              <input name="phone" ng-model="user.phone" type="tel" pattern="[0-9]*" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/">
+              <!-- <input name="phone" ng-model="user.phone" type="tel" pattern="[0-9]*" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/"> -->
+
+              <input id="phoneNumber1" type="tel" pattern="[0-9]*" ng-model="phone.areaCode" name="name" value="" class="number" maxlength="3" size="3" data-autotab-format="number">
+
+              <input id="phoneNumber2" type="tel" pattern="[0-9]*" ng-model="phone.number1" name="name" value="" class="number" maxlength="3" size="3" data-autotab-format="number">
+
+              <input id="phoneNumber3" type="tel" pattern="[0-9]*" ng-model="phone.number2" name="name" value="" class="number" maxlength="4" size="5" data-autotab-format="number">
 
               <div class="hint" ng-show="showHints">(###) ###-####</div>
 
-              <div ng-messages="userForm.phone.$error" ng-hide="showHints">
-              <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
-            </div>
-            </md-input-container>
+              <div ng-messages="userForm.phone.$error" ng-show="showHints">
+                <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+              </div>
+            <!-- </md-input-container> -->
           </div>
         </div>
 
@@ -56,9 +62,17 @@
           </md-input-container>
         </div>
 
-        <div id="email-submitbtn" class="right" layout-margin>
-          <md-button class="md-raised md-primary">Submit</md-button>
+        <div class="row">
+          <div id="email-attachment" class="left col" layout-margin>
+            <md-button class="md-raised">Attach</md-button>
+          </div>
+
+          <div id="email-submitbtn" class="right col" layout-margin>
+            <md-button class="md-raised md-primary">Submit</md-button>
+          </div>
         </div>
+
+
 
       </md-dialog-content>
   </md-dialog>

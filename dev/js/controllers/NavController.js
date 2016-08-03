@@ -1,7 +1,4 @@
 app.controller('NavController',['$scope', '$mdDialog', function($scope, $mdDialog) {
-
-
-
   $scope.showEmailModal = function(ev) {
     $mdDialog.show({
       controller: DialogController,
@@ -10,7 +7,6 @@ app.controller('NavController',['$scope', '$mdDialog', function($scope, $mdDialo
       clickOutsideToClose: true
     });
   };
-
 }]);
 
 DialogController.$inject = ['$scope', '$mdDialog'];
