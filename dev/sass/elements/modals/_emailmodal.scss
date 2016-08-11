@@ -1,17 +1,12 @@
 
 #emailModal {
-  input:not([type]):focus:not([readonly]) {
+  input:not([type]):focus:not([readonly]), input[type=tel]:focus:not([readonly]), textarea:focus:not([readonly]) {
     border-bottom: 1px solid #5E0400 !important;
     box-shadow: 0 1px 0 0 #5E0400 !important;
   }
 
-  input:not([type]) {
+  input:not([type]), input[type=tel], textarea {
     border-bottom: 1px solid #495EC5;
-    // box-shadow: 0 1px 0 0 #5E0400 !important;
-  }
-
-  textarea {
-    border-color: black !important;
   }
 
   .md-errors-spacer {
@@ -21,6 +16,10 @@
   .red-margin {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
+  }
+
+  .telephone {
+    padding-right: 1.5em;
   }
 
   .hint {
@@ -52,9 +51,43 @@
     font-size: 16px;
   }
 
+  md-bottom-sheet {
+    z-index: 82;
+  }
+
+  .md-bottom-sheet-backdrop {
+    z-index: 81;
+  }
+
   #email-attachment {
     button {
       background-color: #BFBEBE;
     }
+  }
+
+  .card-content {
+    padding: 0px !important;
+    border-radius: 0 0 0 0 !important;
+  }
+
+  .card-reveal {
+    padding: 0px !important;
+    .row .col {
+      padding: 0px;
+    }
+  }
+
+  .panel-title {
+    font-size: 24px;
+    line-height: 48px;
+  }
+
+  #panel-header {
+    padding: 16px;
+    max-height: 64px;
+  }
+
+  #panel-close {
+    margin-right: -8px;
   }
 }

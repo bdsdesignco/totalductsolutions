@@ -1,79 +1,113 @@
 <div id="emailModal" ng-controller="EmailController" flex-gt-xs="60" flex-xs="100" flex-offset-xs="10" flex-offset-gt-xs="15">
-  <md-dialog aria-label="Email Form Modal" ng-cloak>
-      <md-dialog-content>
-        <div layout="row" layout-margin>
-          <div id="email-firstname" flex="50">
+  <form>
+    <md-dialog class="card" aria-label="Email Form Modal" ng-cloak>
+      <div class="card-content">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2 class="card-title">Contact Us</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" ng-click="cancel()">
+              <md-icon>clear</md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+        <md-dialog-content id="emailDialog">
+          <div layout-xs="column" layout-gt-xs="row" layout-margin>
+            <div id="email-firstname" flex-xs="100" flex-gt-xs="50">
+              <md-input-container class="red-margin md-block">
+                <label>First Name</label>
+                <input />
+              </md-input-container>
+            </div>
+
+            <div id="email-lastname" flex-xs="100" flex-gt-xs="50">
+              <md-input-container class="red-margin md-block">
+                <label>Last Name</label>
+                <input />
+              </md-input-container>
+            </div>
+          </div>
+
+          <div id="email-company" class="" layout-margin>
             <md-input-container class="red-margin md-block">
-              <label>First Name</label>
+              <label>Company Name</label>
               <input />
             </md-input-container>
           </div>
 
-          <div id="email-lastname" flex="50">
-            <md-input-container class="red-margin md-block">
-              <label>Last Name</label>
-              <input />
-            </md-input-container>
-          </div>
-        </div>
 
-        <div id="email-company" class="" layout-margin>
-          <md-input-container class="red-margin md-block">
-            <label>Company Name</label>
-            <input />
-          </md-input-container>
-        </div>
+          <div layout-xs="column" layout-gt-xs="row" layout-margin>
+            <!-- EMAIL -->
+            <div id="email-email" flex-gt-xs="50" flex-xs="100">
+              <md-input-container class="red-margin md-block">
+                <label>Email</label>
+                <input />
+              </md-input-container>
+            </div>
+            <!-- END EMAIL -->
 
-
-        <div layout="row" layout-margin>
-          <!-- EMAIL INPUT -->
-          <div id="email-email" flex="50">
-            <md-input-container class="red-margin md-block">
-              <label>Email</label>
-              <input />
-            </md-input-container>
-          </div>
-
-          <!-- PHONE NUMBER -->
-          <div id="email-phonenumber" flex="50">
-            <!-- <md-input-container class="red-margin md-block"> -->
+            <!-- PHONE NUMBER -->
+            <div id="email-phonenumber" flex-gt-xs="50" flex-xs="100">
               <label>Phone Number</label>
-              <!-- <input name="phone" ng-model="user.phone" type="tel" pattern="[0-9]*" ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/"> -->
 
-              <input id="phoneNumber1" type="tel" pattern="[0-9]*" ng-model="phone.areaCode" name="name" value="" class="number" maxlength="3" size="3" data-autotab-format="number">
+              <div layout="row">
+                <div class="telephone">
+                  <input phone id="phoneNumber1" type="tel" pattern="[0-9]*" ng-model="phone.areaCode" name="areaCode" value="" class="number" maxlength="3" size="3" data-autotab-format="number">
+                </div>
 
-              <input id="phoneNumber2" type="tel" pattern="[0-9]*" ng-model="phone.number1" name="name" value="" class="number" maxlength="3" size="3" data-autotab-format="number">
+                <div class="telephone">
+                  <input phone id="phoneNumber2" type="tel" pattern="[0-9]*" ng-model="phone.number1" name="number1" value="" class="number" maxlength="3" size="3" data-autotab-format="number">
+                </div>
 
-              <input id="phoneNumber3" type="tel" pattern="[0-9]*" ng-model="phone.number2" name="name" value="" class="number" maxlength="4" size="5" data-autotab-format="number">
+                <div class="telephone">
+                  <input phone id="phoneNumber3" type="tel" pattern="[0-9]*" ng-model="phone.number2" name="number2" value="" class="number" maxlength="4" size="4">
+                </div>
 
-              <div class="hint" ng-show="showHints">(###) ###-####</div>
-
-              <div ng-messages="userForm.phone.$error" ng-show="showHints">
-                <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+                <div>
+                  <input phone id="phoneExt" type="tel" pattern="[0-9]*" ng-model="phone.ext" name="ext" value="" class="" maxlength="4" size="4" placeholder="ext">
+                </div>
               </div>
-            <!-- </md-input-container> -->
-          </div>
-        </div>
-
-        <!-- MESSAGE TEXT AREA -->
-        <div id="email-phonenumber" layout-margin>
-          <md-input-container class="red-margin md-block">
-            <textarea ng-model="user.message" md-maxlength="1000" rows="5" md-select-on-focus="" placeholder="Enter message here..."></textarea>
-          </md-input-container>
-        </div>
-
-        <div class="row">
-          <div id="email-attachment" class="left col" layout-margin>
-            <md-button class="md-raised">Attach</md-button>
+            </div>
+            <!-- END PHONE NUMBER -->
           </div>
 
-          <div id="email-submitbtn" class="right col" layout-margin>
-            <md-button class="md-raised md-primary">Submit</md-button>
+          <!-- MESSAGE TEXT AREA -->
+          <div id="email-phonenumber" layout-margin>
+            <md-input-container class="red-margin md-block">
+              <textarea ng-model="user.message" md-maxlength="1000" rows="5" md-select-on-focus="" placeholder="Enter message here..."></textarea>
+            </md-input-container>
+          </div>
+          <!-- END MESSAGE TEXT AREA -->
+
+
+          <div class="row">
+            <!-- ATTACHMENT BUTTON -->
+            <div id="email-attachment" class="left col" layout-margin>
+              <md-button class="md-raised activator">Attach</md-button>
+            </div>
+            <!-- END ATTACHMENT BUTTON -->
+
+            <!-- SUBMIT BUTTON -->
+            <div id="email-submitbtn" class="right col" layout-margin>
+              <md-button class="md-raised md-primary">Submit</md-button>
+            </div>
+            <!-- END SUBMIT BUTTON-->
+          </div>
+        </md-dialog-content>
+      </div>
+
+
+      <div class="card-reveal">
+        <div id="panel-header" class="row">
+          <div class="col panel-title">Attach Files</div>
+
+          <div class="col right">
+            <md-button id="panel-close" class="md-icon-button">
+              <md-icon class="card-title">clear</md-icon>
+            </md-button>
           </div>
         </div>
-
-
-
-      </md-dialog-content>
-  </md-dialog>
+      </div>
+    </md-dialog>
+  </form>
 </div>

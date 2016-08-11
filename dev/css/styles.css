@@ -195,18 +195,18 @@ md-backdrop.md-opaque {
   #bottom img {
     height: 70px; }
 
-#emailModal input:not([type]):focus:not([readonly]) {
+#emailModal input:not([type]):focus:not([readonly]), #emailModal input[type=tel]:focus:not([readonly]), #emailModal textarea:focus:not([readonly]) {
   border-bottom: 1px solid #5E0400 !important;
   box-shadow: 0 1px 0 0 #5E0400 !important; }
-#emailModal input:not([type]) {
+#emailModal input:not([type]), #emailModal input[type=tel], #emailModal textarea {
   border-bottom: 1px solid #495EC5; }
-#emailModal textarea {
-  border-color: black !important; }
 #emailModal .md-errors-spacer {
   min-height: 12px !important; }
 #emailModal .red-margin {
   margin-top: 10px !important;
   margin-bottom: 10px !important; }
+#emailModal .telephone {
+  padding-right: 1.5em; }
 #emailModal .hint {
   /* Position the hint */
   position: absolute;
@@ -228,7 +228,35 @@ md-backdrop.md-opaque {
 #emailModal label {
   color: black;
   font-size: 16px; }
+#emailModal md-bottom-sheet {
+  z-index: 82; }
+#emailModal .md-bottom-sheet-backdrop {
+  z-index: 81; }
 #emailModal #email-attachment button {
   background-color: #BFBEBE; }
+#emailModal .card-content {
+  padding: 0px !important;
+  border-radius: 0 0 0 0 !important; }
+#emailModal .card-reveal {
+  padding: 0px !important; }
+  #emailModal .card-reveal .row .col {
+    padding: 0px; }
+#emailModal .panel-title {
+  font-size: 24px;
+  line-height: 48px; }
+#emailModal #panel-header {
+  padding: 16px;
+  max-height: 64px; }
+#emailModal #panel-close {
+  margin-right: -8px; }
+#emailModal .dropzone {
+  width: 250px;
+  height: 45px;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 30px;
+  margin: 20px;
+  font-family: Arial;
+  background-color: blue; }
 
 /*# sourceMappingURL=styles.css.map */
