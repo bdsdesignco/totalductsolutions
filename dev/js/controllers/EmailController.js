@@ -6,7 +6,7 @@ app.controller('EmailController',['$scope', '$mdDialog', '$mdBottomSheet', funct
 
   $scope.initAutotab = function() {
     $(function() {
-      // $('.number').autotab('number');
+      $('.number').autotab('number');
     });
   };
 
@@ -21,4 +21,9 @@ app.controller('EmailController',['$scope', '$mdDialog', '$mdBottomSheet', funct
 
   $scope.image = null;
   $scope.imageFileName = '';
+
+  // Setting up the droplet for file uploading
+  $scope.$on('$dropletReady', function whenDropletReady() {
+    $scope.interface.allowedExtensions(['png', 'jpg', 'gif']);
+  });
 }]);
