@@ -4,7 +4,7 @@ app.controller('NavController',['$scope', '$mdDialog', function($scope, $mdDialo
       controller: DialogController,
       templateUrl: 'views/body/modals/emailmodal.html',
       targetEvent: ev,
-      clickOutsideToClose: true
+      clickOutsideToClose: false
     });
   };
 }]);

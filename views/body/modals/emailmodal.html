@@ -1,4 +1,4 @@
-<div id="emailModal" ng-controller="EmailController" flex-gt-xs="60" flex-xs="100" flex-offset-xs="10" flex-offset-gt-xs="15">
+<div id="emailModal" ng-controller="EmailController" flex-gt-xs="60" flex-xs="100" flex-offset-gt-xs="15">
   <form>
     <md-dialog class="card" aria-label="Email Form Modal" ng-cloak>
       <div class="card-content">
@@ -122,46 +122,28 @@
                 <li><label>Total:</label> {{interface.getFiles().length}}</li>
             </ul> -->
 
-            <section class="toolbar">
 
-                <input type="button" class="button upload-files" value="Upload Files"
-                       ng-click="interface.uploadFiles()"
-                       ng-hide="interface.isUploading()"
-                       ng-class="{ clickable: interface.isReady() }" />
-
-                <input type="button" class="button upload-files" value="Uploading..." ng-show="interface.isUploading()" />
-
-                <div class="add-files">
-                    <input type="button" class="button add-files" value="Add Files..." />
-                    <droplet-upload-multiple ng-model="interface"></droplet-upload-multiple>
-                </div>
-
-                <comment class="progress" ng-class="{ visible: interface.isUploading() }">
-                    Uploaded: {{interface.progress.percent}}%
-                </comment>
-
-            </section>
 
             <droplet ng-model="interface">
 
                 <div class="loading" ng-class="{ visible: interface.isUploading() }">
-                    <svg viewBox="0 0 400 400">
+                    <!-- <svg viewBox="0 0 400 400"> -->
                         <!-- <path class="loading-path" data-progressbar ng-model="interface.progress.percent"
                               d="M 0,1 L 398,1 L 398,234 L 1,234 L 0,1"
                               stroke="#D3B2D1" stroke-width="1" fill-opacity="0.5"
                               style="stroke-dasharray: 392px, 392px;stroke-dashoffset: 392px;"></path> -->
-                    </svg>
+                    <!-- </svg> -->
                 </div>
 
                 <comment></comment>
 
-                <section class="message success" ng-class="{ visible: success }" ng-click="success = false">
+                <!-- <section class="message success" ng-class="{ visible: success }" ng-click="success = false">
                     Successfully uploaded {{uploadCount}} files.
                 </section>
 
                 <section class="message error" ng-class="{ visible: error }" ng-click="error = false">
                     Failed to upload any of the files.
-                </section>
+                </section> -->
 
                 <ul class="files">
 
@@ -176,6 +158,26 @@
 
             </droplet>
 
+
+            <section class="toolbar">
+
+                <input type="button" class="button upload-files" value="Attach Files"
+                       ng-click="interface.uploadFiles()"
+                       ng-hide="interface.isUploading()"
+                       ng-class="{ clickable: interface.isReady() }" />
+
+                <input type="button" class="button upload-files" value="Uploading..." ng-show="interface.isUploading()" />
+
+                <div class="add-files">
+                    <input type="button" class="button add-files" value="Add Files..." />
+                    <droplet-upload-multiple ng-model="interface"></droplet-upload-multiple>
+                </div>
+
+                <!-- <comment class="progress" ng-class="{ visible: interface.isUploading() }">
+                    Uploaded: {{interface.progress.percent}}%
+                </comment> -->
+
+            </section>
         </section>
 
 

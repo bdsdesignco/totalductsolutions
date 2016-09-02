@@ -72,11 +72,15 @@
       // panel-header
       #panel-header {
         padding: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         max-height: 64px;
 
         &.row {
           .col {
             padding: 0px;
+            padding-top: 6px;
+            line-height: 48px;
 
             &.panel-title {
               font-size: 24px;
@@ -96,57 +100,104 @@
 
 
         droplet {
-          div {
+          display: inline-block;
+          z-index: 2;
+          position: relative;
+          border-radius: 2px;
+          width: 95%;
+          height: 350px;
+          background-color: rgba(0, 0, 0, .1);
+          margin-top: -5px;
+          padding-top: 5px;
+          margin-left: 2.5%;
+          transition: box-shadow 0.35s;
 
-            &.loading {
-              height: 250px;
+          comment:after {
+            content: "Drop attachments here";
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+            color: #495EC5;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 100%;
+            vertical-align: bottom;
+            text-align: center;
+          }
+
+          &.event-dragover {
+            comment:after {
+              content: "Attaching...";
             }
           }
 
           ul.files {
+            padding-top: 20px;
+            padding-left: 6px;
+            padding-right: 6px;
+            align-items: center;
+
             li {
               width: 100px;
-              height: 100px;
+              height: 110px;
               padding: 1px;
               float: left;
               position: relative;
               margin: 5px;
 
-
               .droplet-preview {
-                max-width: 96px;
+                max-width: 100px;
                 background-size: cover;
                 background-repeat: no-repeat;
-                height: 96px;
-                width: 96px;
+                height: 100px;
+                width: 100px;
                 background-color: white;
                 box-shadow: 0 0 10px rgba(0, 0, 0, .25);
                 border: 1px solid white;
                 display: block;
               }
 
-              div.delete {
-                background-color: rgba(0, 0, 0, .25);
-                width: 50px;
-                height: 50px;
-                font-family: Lato, Arial, Tahoma, Helvetica, sans-serif;
-                color: white;
-                font-size: 25px;
-                text-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
-                text-align: center;
-                cursor: pointer;
-                line-height: 50px;
-                position: absolute;
-                border-radius: 50%;
-                z-index: 101;
-                top: 25px;
-                left: 25px;
-                opacity: 0;
-                transition: all .30s;
-                transform: scale(0.5);
+              div {
+                &.delete {
+                  background-color: rgba(0, 0, 0, .25);
+                  width: 50px;
+                  height: 50px;
+                  font-family: Lato, Arial, Tahoma, Helvetica, sans-serif;
+                  color: white;
+                  font-size: 25px;
+                  text-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
+                  text-align: center;
+                  cursor: pointer;
+                  line-height: 50px;
+                  position: absolute;
+                  border-radius: 50%;
+                  z-index: 101;
+                  top: 25px;
+                  left: 25px;
+                  opacity: 0;
+                  transition: all .30s;
+                  transform: scale(0.5);
 
-                &:hover {
-                  background-color: rgba(0, 0, 0, .45);
+                  &:hover {
+                    background-color: rgba(0, 0, 0, .45);
+                  }
+                }
+
+                &.size {
+                  background-color: rgba(255, 255, 255, .5);
+                  position: absolute;
+                  bottom: 10px;
+                  right: 1px;
+                  pointer-events: none;
+                  font-size: 10px;
+                }
+
+                &.filename {
+                  font-size: 10px;
                 }
               }
             }
