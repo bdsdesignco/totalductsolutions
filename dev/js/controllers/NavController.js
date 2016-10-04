@@ -23,6 +23,11 @@ app.controller('NavController',['$scope', '$mdDialog', function($scope, $mdDialo
     }
   ];
 
+  $scope.toggleRight = buildToggler('right');
+  $scope.isOpenRight = function(){
+    return $mdSidenav('right').isOpen();
+  };
+
   $scope.showEmailModal = function(ev) {
     $mdDialog.show({
       controller: DialogController,

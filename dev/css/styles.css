@@ -41,18 +41,18 @@ md-backdrop.md-opaque {
       height: 62px !important;
       padding-top: 2px;
       padding-bottom: 2px; } }
-  #navbar #nav-button {
+  #navbar #nav-buttons {
     display: -webkit-flex;
     -webkit-flex-flow: wrap;
     display: flex;
     flex-direction: column; }
-    #navbar #nav-button #nav-badge span {
+    #navbar #nav-buttons #nav-badge span {
       margin-right: 100px;
       color: #D0021B; }
-    #navbar #nav-button .nav-btn button {
+    #navbar #nav-buttons .nav-btn button {
       color: #495EC5;
       font-weight: bold; }
-    #navbar #nav-button .nav-btn .md-raised {
+    #navbar #nav-buttons .nav-btn .md-raised {
       color: white !important;
       background-color: #495EC5 !important; }
 
