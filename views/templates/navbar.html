@@ -3,10 +3,12 @@
     <div class="nav-wrapper container">
       <img src="assets/images/logo.png" />
 
-      <div id="nav-buttons" class="right">
-        <div class="nav-btn">
-          <md-button class="{{link.styling}}" ng-click="$eval(link.click)" ng-repeat="link in links">
-            {{link.name}}
+      <div id="nav-button" class="right">
+        <!-- <div id="nav-badge" class="hide-on-med-and-down"><span class="badge">Ordering Coming Soon!</span></div> -->
+        <div id="nav-btn">
+          <md-button class="md-raised" ng-click="showEmailModal($event)">
+            <!-- <a ng-href="mailto:info@totalductsolutions.ca">Order Here</a> -->
+            Order Here
           </md-button>
         </div>
       </div>

@@ -23,14 +23,14 @@ md-backdrop.md-opaque {
   z-index: 100; }
   @media screen and (min-width: 768px) {
     #navbar.navbar-fixed {
-      height: 70px !important; }
+      height: 80px !important; }
     #navbar nav {
       background-color: #BFBEBE;
-      height: 70px !important; }
+      height: 80px !important; }
     #navbar img {
-      height: 50px !important;
-      line-height: 70px;
-      vertical-align: middle; } }
+      height: 78px !important;
+      padding-top: 2px;
+      padding-bottom: 2px; } }
   @media screen and (max-width: 767px) {
     #navbar.navbar-fixed {
       height: 64px !important; }
@@ -41,20 +41,18 @@ md-backdrop.md-opaque {
       height: 62px !important;
       padding-top: 2px;
       padding-bottom: 2px; } }
-  #navbar #nav-buttons {
+  #navbar #nav-button {
     display: -webkit-flex;
     -webkit-flex-flow: wrap;
     display: flex;
     flex-direction: column; }
-    #navbar #nav-buttons #nav-badge span {
+    #navbar #nav-button #nav-badge span {
       margin-right: 100px;
       color: #D0021B; }
-    #navbar #nav-buttons .nav-btn button {
-      color: #495EC5;
-      font-weight: bold; }
-    #navbar #nav-buttons .nav-btn .md-raised {
-      color: white !important;
-      background-color: #495EC5 !important; }
+    #navbar #nav-button #nav-btn button {
+      text-transform: none;
+      color: white;
+      background-color: #495EC5; }
 
 #callout {
   background-image: url("../images/sections/image1.jpg");

@@ -10,20 +10,18 @@
   // Navbar styling for bigger screens
   @media screen and (min-width: 768px) {
     &.navbar-fixed {
-      height: 70px !important;
+      height: 80px !important;
     }
 
     nav {
       background-color: #BFBEBE;
-      height: 70px !important;
+      height: 80px !important;
     }
 
     img {
-    	height: 50px !important;
-      line-height: 70px;
-      vertical-align: middle;
-    	// padding-top: 2px;
-    	// padding-bottom: 2px;
+    	height: 78px !important;
+    	padding-top: 2px;
+    	padding-bottom: 2px;
     }
   }
 
@@ -45,7 +43,7 @@
     }
   }
 
-  #nav-buttons {
+  #nav-button {
     display: -webkit-flex;
     -webkit-flex-flow: wrap;
     display: flex;
@@ -56,19 +54,10 @@
       color: #D0021B;
     }
 
-    .nav-btn {
-      button {
-        color: #495EC5;
-        font-weight: bold;
-      }
-
-      .md-raised {
-        // text-transform: none;
-        color: white !important;
-        background-color: #495EC5 !important;
-        // color: #495EC5 !important;
-        // background-color: white;
-      }
+    #nav-btn button {
+      text-transform: none;
+      color: white;
+      background-color: #495EC5;
     }
   }
 }
